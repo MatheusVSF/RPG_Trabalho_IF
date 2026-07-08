@@ -13,7 +13,9 @@ public class DesviarCommand implements Command {
 
     @Override
     public void execute() {
-        int valorDesvio = random.nextInt(4) + 2; // Sorteia entre 2 e 5 (inclusive)
+        int valorDesvio = random.nextInt(4) + 2; 
+        player.estaDesviando = true;
+        player.valorDesvioSorteado = valorDesvio;
         System.out.println("Esforço/Valor de desvio sorteado: " + valorDesvio);
         player.desviar();
     }

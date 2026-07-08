@@ -13,7 +13,8 @@ public class DefenderCommand implements Command {
 
     @Override
     public void execute() {
-        int valorDef = random.nextInt(4) + 2; // Sorteia entre 2 e 5 (inclusive)
+        int valorDef = random.nextInt(4) + 2; 
+        player.estaDefendendo = true;
         player.def += valorDef;
         System.out.println("Aumento de defesa sorteado: " + valorDef);
         player.defender();

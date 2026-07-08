@@ -3,3 +3,6 @@
 *.class
 out/
 bin/
+.src/factory/
+.src/invoker/
+.src/uI/
